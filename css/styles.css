@@ -1,0 +1,68 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.container {
+  position: relative;
+  width: 250px;
+  height: 320px;
+  margin: 20px;
+}
+
+.characterCard {
+position: absolute;
+width: 100%;
+height: 100%;
+transform-style: preserve-3d;
+transition: all 0.5s ease;
+
+
+}
+
+.characterCard:hover {
+transform: rotateY(180deg);
+}
+
+.front{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: black;
+  color: yellow;
+}
+
+.cardImage{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  border: 3px solid gray;
+}
+
+.back{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: black;
+  color: yellow;
+  transform: rotateY(180deg);
+}
+
+#overlord {
+  display: inline-flex;
+  flex-wrap: wrap;
+  
+}
+
+h3 {
+  text-align: center;
+
+}
+
+#clone {
+  border-radius: 10px;
+  padding: 50px;
+  margin-left: 20px;
+  cursor: pointer;
+}
